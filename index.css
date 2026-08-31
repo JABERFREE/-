@@ -23,7 +23,7 @@ body {
 /* شريط التنقل العلوي الداكن والمنظم */
 .header {
   background-color: #0b132b;
-  padding: 1.2rem 3rem;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,29 +31,30 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+  flex-wrap: wrap;
 }
 
 .logo-area h1 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #ffffff;
   letter-spacing: 0.5px;
 }
 
 .logo-area p {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #ffb703;
 }
 
 .nav-links {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .nav-links a {
   color: #e0e1dd;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   transition: color 0.3s;
 }
 
@@ -64,31 +65,31 @@ body {
 .header-actions {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .lang-switcher {
   display: flex;
   align-items: center;
   background: #1c2541;
-  padding: 3px;
+  padding: 2px;
   border-radius: 6px;
-  gap: 3px;
+  gap: 2px;
 }
 
 .globe-icon {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   color: #ffb703;
-  margin: 0 4px;
+  margin: 0 2px;
 }
 
 .lang-switcher button {
   background: transparent;
   border: none;
   color: #ffffff;
-  padding: 4px 8px;
-  font-size: 0.75rem;
+  padding: 3px 6px;
+  font-size: 0.7rem;
   cursor: pointer;
   border-radius: 4px;
 }
@@ -102,18 +103,19 @@ body {
 .quote-btn {
   background-color: #ffb703;
   color: #0b132b;
-  padding: 8px 16px;
+  padding: 6px 12px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  white-space: nowrap;
 }
 
 /* قسم البانر الرئيسي */
 .hero-section {
   background: linear-gradient(rgba(11, 19, 43, 0.85), rgba(11, 19, 43, 0.95)), 
               url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1600&q=80') center/cover;
-  padding: 6rem 3rem;
+  padding: 4rem 1.5rem;
 }
 
 .hero-content {
@@ -121,14 +123,14 @@ body {
 }
 
 .hero-content h2 {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 1rem;
   color: #ffffff;
 }
 
 .hero-content p {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #cbd5e1;
   margin-bottom: 2rem;
 }
@@ -143,15 +145,15 @@ body {
   display: inline-block;
 }
 
-/* قسم القطاعات والخدمات (خلفية بيضاء وبطاقات منتظمة) */
+/* قسم القطاعات والخدمات */
 .sectors-section {
   background-color: #ffffff;
   color: #0b132b;
-  padding: 4rem 3rem;
+  padding: 3rem 1.5rem;
 }
 
 .sectors-header h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 1.5rem;
   font-weight: bold;
   color: #0b132b;
@@ -206,7 +208,7 @@ body {
 }
 
 .sector-card h4 {
-  font-size: 1.rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #0b132b;
   margin-bottom: 8px;
@@ -223,15 +225,15 @@ body {
 .distribution-box {
   background-color: #f1f5f9;
   border-radius: 8px;
-  padding: 2.5rem;
+  padding: 2rem 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
   border: 1px solid #e2e8f0;
 }
 
 .dist-text h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   margin-bottom: 10px;
   color: #0b132b;
 }
@@ -243,17 +245,17 @@ body {
 .dist-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .dist-grid h5 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-bottom: 5px;
   color: #0b132b;
 }
 
 .dist-grid p {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   color: #64748b;
 }
 
@@ -261,7 +263,7 @@ body {
 .contact-section {
   background-color: #0b132b;
   color: #ffffff;
-  padding: 4rem 3rem;
+  padding: 3rem 1.5rem;
 }
 
 .contact-container {
@@ -274,7 +276,7 @@ body {
 }
 
 .contact-intro h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-bottom: 5px;
 }
 
@@ -283,6 +285,7 @@ body {
 }
 
 .form-row {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-bottom: 15px;
@@ -304,7 +307,7 @@ body {
 }
 
 .submit-btn {
-  background-color: #ffb700;
+  background-color: #ffb703;
   color: #0b132b;
   padding: 12px 30px;
   border: none;
@@ -324,53 +327,61 @@ footer {
   border-top: 1px solid #1c2541;
 }
 
-/* --- تعديلات الهيدر والشاشات الصغيرة لمنع التداخل والترجمة المقلوبة --- */
+/* --- تنسيق الهواتف المحمولة بدقة لمنع التداخل تماماً --- */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-    gap: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
   }
 
   .logo-area {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex: 1;
   }
 
-  .header-actions {
-    width: 100%;
-    justify-content: space-between;
+  .logo-area h1 {
+    font-size: 1rem;
+  }
+
+  .logo-area p {
+    font-size: 0.65rem;
   }
 
   .nav-links {
-    display: none !important; /* إخفاء الروابط العلوية المتداخلة على الجوال */
+    display: none !important; /* إخفاء الروابط النصية المتداخلة على الشاشات الصغيرة */
+  }
+
+  .header-actions {
+    gap: 8px;
+  }
+
+  .quote-btn {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+
+  .lang-switcher button {
+    padding: 2px 5px;
+    font-size: 0.65rem;
   }
 
   .hero-section {
-    padding: 3rem 1.2rem;
+    padding: 3rem 1rem;
   }
 
   .hero-content h2 {
-    font-size: 2rem !important;
-  }
-
-  .sectors-section, 
-  .contact-section {
-    padding: 2.5rem 1.2rem;
+    font-size: 1.8rem !important;
   }
 
   .distribution-box {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    padding: 1.5rem;
+    padding: 1.2rem;
   }
 
   .dist-grid {
     grid-template-columns: 1fr;
-    gap: 1.0rem;
   }
 
   .form-row {
