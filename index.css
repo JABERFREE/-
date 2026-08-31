@@ -306,7 +306,6 @@ body {
 }
 
 .submit-btn {
-  background-content: #ffb703;
   background-color: #ffb703;
   color: #0b132b;
   padding: 12px 30px;
@@ -325,4 +324,45 @@ footer {
   padding: 1.5rem;
   font-size: 0.85rem;
   border-top: 1px solid #1c2541;
+}
+
+/* --- تعديلات التجاوب الإضافية لشاشات الهواتف المحمولة --- */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: none !important; /* إخفاء الروابط المتداخلة على الجوال لحين تفعيل القائمة */
+  }
+
+  .hero-section {
+    padding: 3rem 1.2rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem !important;
+  }
+
+  .sectors-section, 
+  .contact-section {
+    padding: 2.5rem 1.2rem;
+  }
+
+  .distribution-box {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .dist-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
 }
